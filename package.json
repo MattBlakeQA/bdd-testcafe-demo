@@ -1,0 +1,24 @@
+{
+	"name": "bdd-framework-demo",
+	"version": "1.0.0",
+	"description": "Demo of a BDD-style framewowrk using TestCafe and Gherkin-TestCafe",
+	"main": "index.js",
+	"scripts": {
+		"test:chrome": "gherkin-testcafe chrome -s takeOnFails=true steps/*.js features/**/*.feature",
+		"test:firefox": "gherkin-testcafe firefox -s takeOnFails=true steps/*.js features/**/*.feature",
+		"test:chrome:headless": "gherkin-testcafe chrome:headless -s takeOnFails=true steps/*.js features/**/*.feature",
+		"test:firefox:headless": "gherkin-testcafe firefox:headless -s takeOnFails=true steps/*.js features/**/*.feature",
+		"test:multiple": "gherkin-testcafe chrome,firefox -s takeOnFails=true steps/*.js features/**/*.feature",
+		"test:multiple:headless": "gherkin-testcafe chrome:headless,firefox:headless -s takeOnFails=true steps/*.js features/**/*.feature"
+	},
+	"keywords": [],
+	"author": "Matt Blake",
+	"license": "ISC",
+	"dependencies": {},
+	"devDependencies": {
+		"cucumber": "^6.0.5",
+		"gherkin-testcafe": "^2.5.0",
+		"prettier": "^1.19.1",
+		"testcafe": "^1.8.2"
+	}
+}
