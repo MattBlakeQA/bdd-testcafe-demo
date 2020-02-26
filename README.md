@@ -33,4 +33,4 @@ Chrome and Firefox:
 **npm run test:multiple**
 
 Chrome and Firefox (with headless mode):
-**npm test:multiple:headless**
+**npm run test:multiple:headless**
